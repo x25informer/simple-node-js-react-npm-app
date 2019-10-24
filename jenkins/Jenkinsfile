@@ -6,15 +6,9 @@ pipeline {
         }
     }
     stages {
-	stage('Build install stage') {
-	    steps {
-		echo '##### Build Install #####'
-	    }
-	}
         stage('Build') { 
             steps {
-                sh 'npm install'
-		echo 'Finish build install' 
+                sh 'npm install' 
             }
         }
     }
